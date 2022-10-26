@@ -44,7 +44,7 @@ void TTT::StartTTT() {
         } else if (gameProgress == 2) {
             cout << P2 << " (Player2) wins the game!" << endl;
         } else if (gameProgress == 3) {
-            cout << "Tie between " << P1 << "(Player1) and  "<< P2 << " (Player2)" << endl;
+            cout << "Tie between " << P1 << "(Player1) and  " << P2 << " (Player2)" << endl;
         }
     } while (gameProgress == 0);
     cout << "Press any key to continue..." << endl;
@@ -88,10 +88,10 @@ int TTT::CheckProgress() {
     bool isBoardFull = true;
     for (int r = 0; r < 3; r++) {
         for (int c = 0; c < 3; c++) {
-            if(Board[r][c] == 0) isBoardFull = false;
+            if (Board[r][c] == 0) isBoardFull = false;
         }
     }
-    if(isBoardFull) return 3;
+    if (isBoardFull) return 3;
 
     return 0;
 }
